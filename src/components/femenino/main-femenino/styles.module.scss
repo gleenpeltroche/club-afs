@@ -1,0 +1,70 @@
+.container {
+    display: flexbox;
+    // flex-direction: column;
+}
+.information {
+    display: flex;
+    gap: 3rem;
+    margin: 3rem;
+    flex-direction: column;
+    @media (min-width: 1024px){
+        flex-direction: row;
+    }
+}
+.infoimage {
+    height: auto;
+    width: 500px;
+    align-self: center;
+    @media (min-width: 1024px){
+        align-self: flex-start;
+    }
+}
+.infotext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background-color: yellow;
+    width: 100%;
+    // background-color: red;
+    h2, h3 {
+        font-size: 2rem;
+        font-weight: 600;
+        background-color: rgb(30, 39, 77);
+        color: white;
+        padding: 0.7rem;
+        display: inline;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    h2 {
+        align-self: flex-start;
+    }
+    h3 {
+        align-self: center;
+    }
+    p {
+        align-self: flex-start;
+        font-size: 1.3rem;
+        margin-top: 1.5rem;
+        font-weight: 500;
+        span {
+            background-color: rgb(30, 39, 77);
+            color: white;
+            padding: .2rem .5rem;
+        }
+    }
+    @media (min-width: 650px) {
+        h2, h3 {
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.5rem;
+            text-align: justify;
+        }
+    }
+}
+.separator {
+    height: 10px;
+    background-color: rgb(30, 39, 77);
+}

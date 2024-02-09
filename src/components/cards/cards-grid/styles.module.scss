@@ -1,0 +1,14 @@
+.cardsContainer{
+    display: grid;
+    grid-column: 2 / span 12;
+    grid-template-columns: repeat(12, minmax(auto, 60px));
+    grid-gap: 40px;
+    margin: 3rem 0;
+}
+@media only screen and (max-width: 500px) {
+    .cardsContainer {
+        grid-column: 2 / span 6;
+        grid-template-columns: repeat( auto-fit, minmax(230px, 1fr) );
+        grid-gap: 20px;
+    }
+}
